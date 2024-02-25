@@ -17,6 +17,7 @@ async function getData (city) {
 
   const imgIcon = document.querySelector("#weatherIcon");
   if(data.weather[0].main == "Haze") {
+
   imgIcon.src = "images/mist.png";
   } else if (data.weather[0].main == "Clear") {
     imgIcon.src = "images/clear1.png";
@@ -30,6 +31,21 @@ async function getData (city) {
     imgIcon.src = "images/snow.png";
   } else if (data.weather[0].main == "thunderstorm") {
     imgIcon.src = "images/thunderstorm.png";
+
+  imgIcon.src = "/images/mist.png";
+  } else if (data.weather[0].main == "Clear") {
+    imgIcon.src = "/images/clear1.png";
+  } else if (data.weather[0].main == "Clouds") {
+    imgIcon.src = "/images/clouds.png";
+  } else if (data.weather[0].main == "Drizzle") {
+    imgIcon.src = "/images/drizzle.png";
+  } else if (data.weather[0].main == "Rain") {
+    imgIcon.src = "/images/rain.png";
+  } else if (data.weather[0].main == "Snow") {
+    imgIcon.src = "/images/snow.png";
+  } else if (data.weather[0].main == "Thunderstorm") {
+    imgIcon.src = "/images/thunderstorm.png";
+
   }
 
   } catch(e) {
