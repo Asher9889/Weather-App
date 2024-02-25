@@ -13,21 +13,23 @@ async function getData (city) {
   document.querySelector("#wind-speed").innerText = data.wind.speed + " km/h";
   document.querySelector("#humidity").innerText = data.main.humidity + "%";
 
+  document.querySelector("#search-info").style.display = "block";
+
   const imgIcon = document.querySelector("#weatherIcon");
   if(data.weather[0].main == "Haze") {
-  imgIcon.src = "/images/mist.png";
+  imgIcon.src = "images/mist.png";
   } else if (data.weather[0].main == "Clear") {
-    imgIcon.src = "/images/clear1.png";
+    imgIcon.src = "images/clear1.png";
   } else if (data.weather[0].main == "Clouds") {
-    imgIcon.src = "/images/clouds.png";
+    imgIcon.src = "images/clouds.png";
   } else if (data.weather[0].main == "Drizzle") {
-    imgIcon.src = "/images/drizzle.png";
+    imgIcon.src = "images/drizzle.png";
   } else if (data.weather[0].main == "Rain") {
-    imgIcon.src = "/images/rain.png";
+    imgIcon.src = "images/rain.png";
   } else if (data.weather[0].main == "Snow") {
-    imgIcon.src = "/images/snow.png";
+    imgIcon.src = "images/snow.png";
   } else if (data.weather[0].main == "thunderstorm") {
-    imgIcon.src = "/images/thunderstorm.png";
+    imgIcon.src = "images/thunderstorm.png";
   }
 
   } catch(e) {

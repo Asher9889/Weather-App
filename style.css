@@ -73,6 +73,10 @@ button:hover{
   cursor: pointer;
 }
 
+#search-info{
+  display: none;
+}
+
 .weather {
   margin-top: 20px ;
   display: flex;
