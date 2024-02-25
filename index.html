@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+      <input class="search-box" type="text" placeholder="enter city name">
+      <button class="search-btn"><img src="/images/search.png" alt="search-btn"></button>
+   </div>
+   <div class="weather">
+      <img id="weatherIcon" src="/images/snow.png" alt="weather image">
+      <h1 id="temperature">25°c</h1>
+      <h1 id="city">Kanpur</h1>
+   </div>
+   <div class="weather-details">
+      <div class="weather-left">
+        <img src="/images/humidity.png" alt="">
+        <div>
+
+          <span id="humidity">53%</span>
+          <p>Humidity</p>
+        </div>
+        
+      </div>
+      <div class="weather-right">
+        <img src="/images/wind.png" alt="">
+        <div>
+          <span id="wind-speed">5.66 km/h</span>
+          <p >Wind Speed</p>
+        </div>
+      </div>
+   </div>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
